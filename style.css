@@ -1,0 +1,223 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header .navbar{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    color: white;
+}
+header{
+        background-color: #0b529a86  ;
+        padding: 23px 70px;
+}
+.navbar .second{
+    display: flex;
+    gap: 30px;
+    font-size: 24px;
+}
+.navbar .second a{
+    text-decoration: none;
+    list-style: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+    position: relative;
+    transition:all 0.3s ease;
+}
+.navbar .second a:hover{
+    color: rgb(42, 227, 212);
+}
+.navbar .second a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    top: 69px;
+    background-color: rgb(42, 227, 212);
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.navbar .second a:hover::after {
+    transform: scaleX(1);
+}
+.third div{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 18px;
+}
+main .first{
+background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+    url('img/architect_at_work-wallpaper-3840x2160.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+main .first div{
+    padding: 0 20px;
+
+}
+main .first div h1{
+    font-size: 4.5rem;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+main .first div p{
+    font-size: 1.2rem;
+    color: #f8f8f8;
+}
+main .first div .span{
+    margin: 0 8px;
+    color: rgb(42, 227, 212);
+}
+main .second{
+    padding: 80px 50px;
+
+}
+
+main .second .mentor-grid{
+    display: grid;
+    gap:30px;
+    grid-template-columns: repeat(auto-fill,minmax(550px,1fr));
+}
+main .second .mentor-grid .card{
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+  padding: 25px 20px;
+}
+main .second .mentor-grid .card:hover{
+transform: translateY(-10px);;
+}
+main .second .mentor-grid .card .img img{
+    width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+main .second .mentor-grid .card .name{
+  font-size: 1.7rem;
+  margin-bottom: 5px;
+  color: #222;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+}
+main .second .mentor-grid .card .postion{
+  font-family: Verdana, Geneva, Tahoma, sans-serif  ;
+  font-size: 1.2rem;
+  margin: 0;
+}
+.footerb{
+  padding:40px 0;
+  background-color:#ffffff;
+  color:#4b4c4d;
+  background-color:#0b529a86;
+  color: white;
+}
+
+.footerb ul {
+  padding:0;
+  list-style:none;
+  text-align:center;
+  font-size:25px;
+  line-height:1.6;
+  margin-bottom:0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.footerb li {
+  padding:0 10px;
+}
+
+.footerb ul a {
+  color:inherit;
+  text-decoration:none;
+  opacity:0.8;
+}
+
+.footerb ul a:hover {
+  opacity:1;
+}
+
+
+.footerb .copyright {
+  margin-top:15px;
+  text-align:center;
+  font-size:13px;
+  color:white;
+  margin-bottom:0;
+}
+main .second .mentor-grid .card .select-mentor {
+    margin-top: 10px;
+    padding: 8px 100px;
+    color: white;
+    border: none;
+    background-color: rgb(208, 206, 206);
+    border-radius: 150px;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+main .second .mentor-grid .card .select-mentor:hover {
+    background: #0056b3;
+}
+.goals, .tasks, .resource{
+    padding: 40px 65px;
+}
+.goals h2, .tasks h2, .resource h2{
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #222;
+
+
+}
+.goals input, .tasks input, .resource input{
+    padding: 10px;
+    width: 100%;
+    max-width: 300px;
+    border: 1px solid #ddd;
+
+}
+.goals button, .tasks button, .resource button{
+    padding: 10px 20px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    margin: 10px 0;
+    background-color: #0056b3;
+}
+#yourGoal{
+    font-size: 1.2rem;
+}
+#ul-tasks,#ul-resource{
+    list-style: none;
+    margin-top: 20px;
+}
+#ul-tasks li,#ul-resource li{
+    display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding:5px;
+        border-bottom: 1px solid #ddd;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#ul-tasks li.completed{
+    text-decoration: line-through;
+    color: rgb(170, 169, 169);
+}

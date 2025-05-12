@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyMentor</title>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+                    <div class="first" style="display: flex;align-items: center;" >
+            <img width="70px" src="img/free-icon-ungroup-8423452.png" alt="">
+            <h1 style="font-family:Georgia, 'Times New Roman', Times, serif;">MyMentor</h1>
+        </div>
+        <div class="second">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Pages</a>
+            <a href="#">Services</a>
+            <a href="#">Contact</a>
+        </div>
+        <div class="third" style="display: flex;align-items: center;">
+            <img width="35px" src="img/phone-call.png" alt="">
+            <div>
+                <p>NeedHelp</p>
+                <p>&89048395</p>
+            </div>
+        </div>
+        </div>
+
+    </header>
+    <main>
+        <section class="first">
+            <div>
+            <h1 class="men">Our Mentors</h1>
+            <p class="home">Home >> <span class="span">Our Mentors</span></p>
+            </div>
+
+        </section>
+
+        <section class="second">
+            <div class="container">
+
+
+            <div class="mentor-grid">
+                <div class="card" data-mentor = "mentor1">
+                    <div class="img">
+                        <img src="img/360_F_299042079_vGBD7wIlSeNl7vOevWHiL93G4koMM967.jpg" alt="">
+                    </div>
+                    <h3 class="name">Nurzhan Sagyndyk</h3>
+                    <p class="postion">It Solutions</p>
+                    <button class="select-mentor" onclick='selectMentor("mentor1")'>Choose</button>
+                </div>
+                 <div class="card" data-mentor="mentor2">
+                    <div class="img">
+                        <img src="img/alone-man-thinking-images_181020-2882.jpg" alt="">
+                    </div>
+                    <h3 class="name">Abdybai Zhasulan</h3>
+                    <p class="postion">Web DORMAED</p>
+                    <button class="select-mentor" onclick='selectMentor("mentor2")'>Choose</button>
+                </div>
+                 <div class="card" data-mentor="mentor3">
+                    <div class="img">
+                        <img src="img/istockphoto-1399565382-612x612.jpg" alt="">
+                    </div>
+                    <h3 class="name">Turar Nurtugan</h3>
+                    <p class="postion">Backend developer</p>
+                    <button class="select-mentor" onclick='selectMentor("mentor3")'>Choose</button>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <h1 style="margin-top: 80px;margin-bottom:-60px;padding-left:15px;font-size: 35px;font-family:Verdana, Geneva, Tahoma, sans-serif;">Mentor: <span id="mentorss" style="font-size: 35px;font-family:Verdana, Geneva, Tahoma, sans-serif;"></span></h1>
+        </div>
+
+        </section>
+
+        <section style="display: flex;justify-content: space-between;width: 100%;">
+        <section class="goals">
+            <div class="container">
+                <h2>Your goals</h2>
+                <input type="text" id="goals" placeholder="For example:learn basic JS">
+                <button onclick='setGoals()'>Save Goals</button>
+                <p id="yourGoal">target not set</p>
+            </div>
+        </section>
+
+        <section class="tasks">
+            <div class="container">
+                <h2>Tasks</h2>
+                <input type="text" id="tasks-input" placeholder="New task">
+                <button onclick='addTask()'>Add task</button>
+                <ul id="ul-tasks"></ul>
+                
+            </div>
+        </section>
+        <section class="resource">
+            <div class="container">
+                <h2>Beneficial recourses</h2>
+                <input type="text" id="resource-input" placeholder="Name of resource">
+                <input type="url" id="url-input" placeholder="URL resource">
+                <button onclick='addResource()'>Add Recourse</button>
+                <ul id="ul-resource"></ul>
+            </div>
+        </section>
+        </section>
+    </main>
+       <div class="footerb">
+        <footer>
+        
+            <ul class="list">
+                <li class="item"><a href="#">Home</a></li>
+                <li class="item"><a href="#">Services</a></li>
+                <li class="item"><a href="#">About</a></li>
+                <li class="item"><a href="#">Terms</a></li>
+                <li class="item"><a href="#">Privacy Policy</a></li>
+            </ul>
+            <p class="copyright">MYMENTOR © 2025 || SKILLCAMP</p>
+        </footer>
+    <script src="script.js"></script>
+</body>
+</html>
