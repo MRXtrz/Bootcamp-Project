@@ -35,7 +35,7 @@ function saveData(){
     main()
 }
 function main(){
-    const mentor = data[data.selectedMentor] && data.selectedMentor ? data[data.selectedMentor] : null
+const mentor = data.selectedMentor && data[data.selectedMentor] ? data[data.selectedMentor] : null
     if(!mentor){return}
     document.getElementById("yourGoal").textContent = mentor && mentor.goal ? mentor.goal : 'target not set'
     document.querySelectorAll(".card").forEach(card =>{
@@ -52,7 +52,7 @@ function main(){
         li.innerHTML=`
         <span>${task.text}</span>
         <div>
-        <button onclick='toggleTask(${index})'>${task.completed ? 'Check' : "completed"}</button>
+        <button onclick='toggleTask(${index})'>${task.completed ? 'Check' : 'Completed'}</button>
         <button onclick='deleteTask(${index})'>Delete</button>
         </div>
         `
